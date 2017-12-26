@@ -2,41 +2,81 @@
 
 #root {
   height: 100%;
+  font-size: 12px;
+  font-family: -apple-system, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
+  word-break: break-word;
+  text-rendering: optimizeLegibility;
+  color: #333;
+  background-color: #f4f5f5;
 }
 
 .app {
   height: 100%;
 }
 
-.ant-carousel .slick-slide {
-  text-align: center;
-  height: 392px;
-  line-height: 392px;
-  background: #364d79;
-  overflow: hidden;
+.header {
+  position: relative;
+  height: 5rem;
 }
 
-.ant-carousel .slick-slide h3 {
-  color: #fff;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 435px;
-  height: 350px;
-  border: solid 1px #9c9c9c;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.card-content {
-  text-align: center;
+.zxb-menu {
+  width: 100%;
+  min-width: 960px;
+  margin: auto;
 }
 
 .card-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.main {
+  margin: 1.767rem auto;
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+}
+
+.cat {
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  display: flex;
+  border-bottom: 1px solid #f6f6f6;
+}
+
+.info-box {
+  display: flex;
+  padding: 1.167rem 2rem;
+  min-height: 5.75rem;
+  flex-direction: column;
+}
+
+.info-row {
+  margin: .5rem 0 .8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meta-row {
+  display: flex;
+  align-items: flex-end;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 1.2rem;
+  padding: .38rem 0;
+  min-width: 4.5rem;
+  text-align: center;
+  line-height: 1;
+  color: #fff;
+  background-color: #c69f42;
+  border-radius: 2px
+}
+
+.label {
+  color: #8f969c;
 }

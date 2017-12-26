@@ -28,15 +28,18 @@ export default class Header extends Component {
 
   render() {
     return (
-      <Menu
-        onClick={this.handleClick}
-        selectedKeys={[this.state.current]}
-        mode="horizontal"
-      >
-        {dataSource.map(item => <Menu.Item key={item.key}>
-          <Link to={item.path}>{item.label}</Link>
-        </Menu.Item>)}
-      </Menu>
+      <div className="header">
+        <Menu
+          className="zxb-menu"
+          onClick={this.handleClick}
+          selectedKeys={[this.state.current]}
+          mode="horizontal"
+        >
+          {dataSource.map(item => <Menu.Item key={item.key}>
+            <Link to={item.path}>{item.label}</Link>
+          </Menu.Item>)}
+        </Menu>
+      </div>
     )
   }
 }
